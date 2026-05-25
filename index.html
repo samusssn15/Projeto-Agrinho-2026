@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#calculadora">Simulador</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro forte, futuro sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#pilares" class="btn">Conhecer Pilares</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares-section">
+        <h2>Como equilibrar produção e preservação?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Tecnologia no Campo</h3>
+                <p>Uso de drones, sensores e IA para aplicar insumos na quantidade exata, reduzindo desperdícios e protegendo o solo.</p>
+            </div>
+            <div class="card">
+                <h3>Manejo Biológico</h3>
+                <p>Substituição gradual de defensivos químicos por soluções biológicas, mantendo a terra fértil e viva por gerações.</p>
+            </div>
+            <div class="card">
+                <h3>Recuperação de Áreas</h3>
+                <p>Integração Lavoura-Pecuária-Floresta (ILPF) para sequestrar carbono e recuperar pastagens degradadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calc-section">
+        <h2>Simulador de Impacto Ambiental</h2>
+        <p>Insira o tamanho da sua propriedade para entender o potencial de preservação ideal (baseado no Código Florestal).</p>
+        
+        <div class="calc-form">
+            <label for="hectares">Tamanho da fazenda (em hectares):</label>
+            <input type="number" id="hectares" placeholder="Ex: 100" min="1">
+            <button id="btn-calcular">Calcular Equilíbrio</button>
+        </div>
+
+        <div id="resultado" class="resultado hidden">
+            <h3>Seu Diagnóstico Sustentável:</h3>
+            <p id="res-reserva"></p>
+            <p id="res-mensagem" class="destaque"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Produzindo com consciência.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
